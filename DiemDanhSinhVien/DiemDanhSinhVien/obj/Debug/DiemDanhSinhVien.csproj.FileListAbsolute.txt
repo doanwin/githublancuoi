@@ -415,3 +415,4 @@ C:\Users\PC-NAV\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien
 C:\Users\PC-NAV\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.Views.frmGiaoVien.resources
 C:\Users\PC-NAV\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.Views.frmSinhVien.resources
 C:\Users\PC-NAV\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.Views.frmBaoCaoTinhTrang.resources
+C:\Users\PC-NAV\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.Views.frmPhanQuyenNguoiSuDung.resources

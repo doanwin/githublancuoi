@@ -1,6 +1,6 @@
 ﻿namespace DiemDanhSinhVien.Views
 {
-    partial class frmPhanquyennguoidung
+    partial class frmPhanQuyenNguoiSuDung
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnLayra = new System.Windows.Forms.Button();
             this.btnThemvao = new System.Windows.Forms.Button();
@@ -37,10 +39,37 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.cbo_nhomnguoidung = new System.Windows.Forms.ComboBox();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
+            this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_nguoidungnhomnguoidung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Nguoidung)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // layoutControl1
+            // 
+            this.layoutControl1.Controls.Add(this.groupBox1);
+            this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.layoutControl1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControl1.Name = "layoutControl1";
+            this.layoutControl1.Root = this.layoutControlGroup1;
+            this.layoutControl1.Size = new System.Drawing.Size(721, 472);
+            this.layoutControl1.TabIndex = 0;
+            this.layoutControl1.Text = "layoutControl1";
+            // 
+            // layoutControlGroup1
+            // 
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem1});
+            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup1.Name = "layoutControlGroup1";
+            this.layoutControlGroup1.Size = new System.Drawing.Size(721, 472);
+            this.layoutControlGroup1.TextVisible = false;
             // 
             // groupBox1
             // 
@@ -50,10 +79,10 @@
             this.groupBox1.Controls.Add(this.dgv_Nguoidung);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.cbo_nhomnguoidung);
-            this.groupBox1.Location = new System.Drawing.Point(91, 61);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(650, 347);
-            this.groupBox1.TabIndex = 8;
+            this.groupBox1.Size = new System.Drawing.Size(697, 448);
+            this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thêm người dùng vào nhóm";
             // 
@@ -124,25 +153,39 @@
             this.cbo_nhomnguoidung.Size = new System.Drawing.Size(229, 21);
             this.cbo_nhomnguoidung.TabIndex = 7;
             // 
-            // frmPhanquyennguoidung
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.Control = this.groupBox1;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(701, 452);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem1.TextVisible = false;
+            // 
+            // frmPhanQuyenNguoiSuDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(997, 515);
-            this.Controls.Add(this.groupBox1);
-            this.Name = "frmPhanquyennguoidung";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Thêm người dùng vào nhóm";
+            this.ClientSize = new System.Drawing.Size(721, 472);
+            this.Controls.Add(this.layoutControl1);
+            this.Name = "frmPhanQuyenNguoiSuDung";
+            this.Text = "frmPhanQuyenNguoiSuDung";
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
+            this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_nguoidungnhomnguoidung)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Nguoidung)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private DevExpress.XtraLayout.LayoutControl layoutControl1;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnLayra;
         private System.Windows.Forms.Button btnThemvao;
@@ -152,6 +195,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbo_nhomnguoidung;
-
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
     }
 }
