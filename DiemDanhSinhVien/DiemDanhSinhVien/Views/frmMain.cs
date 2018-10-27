@@ -88,7 +88,7 @@ namespace DiemDanhSinhVien
 
         private void btnChitietgiangvien_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            var form1 = new frmDiemdanh();
+            var form1 = new frmGiaoVien();
             if (ExistForm(form1))
                 return;
             form1.MdiParent = this;
