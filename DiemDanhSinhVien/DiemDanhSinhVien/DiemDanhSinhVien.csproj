@@ -72,6 +72,12 @@
     <Compile Include="Views\formCauHinh.designer.cs">
       <DependentUpon>formCauHinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\frmBaoCaoTinhTrang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmBaoCaoTinhTrang.Designer.cs">
+      <DependentUpon>frmBaoCaoTinhTrang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\frmCaHoc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     </Compile>
     <EmbeddedResource Include="Views\formCauHinh.resx">
       <DependentUpon>formCauHinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmBaoCaoTinhTrang.resx">
+      <DependentUpon>frmBaoCaoTinhTrang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmCaHoc.resx">
       <DependentUpon>frmCaHoc.cs</DependentUpon>
@@ -223,6 +232,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Actions-list-add-user-icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow-mail-upload-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

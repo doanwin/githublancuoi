@@ -113,6 +113,16 @@ namespace DiemDanhSinhVien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Arrow_mail_upload_icon {
+            get {
+                object obj = ResourceManager.GetObject("Arrow-mail-upload-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Folder_Sharepoint_Folder_icon {
             get {
                 object obj = ResourceManager.GetObject("Folder-Sharepoint-Folder-icon", resourceCulture);
