@@ -48,6 +48,7 @@
     <Compile Include="DAL_NguoiDung.cs" />
     <Compile Include="DAL_NguoidungNhomnguoidung.cs" />
     <Compile Include="DAL_NhomNguoiDung.cs" />
+    <Compile Include="DAL_QuyenChucNang.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -63,7 +64,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>qldiemdanhsv.xsd</DependentUpon>
     </Compile>
-    <Compile Include="QL_PhanQuyen.cs" />
+    <Compile Include="DAL_QL_PhanQuyen.cs" />
     <Compile Include="Themnguoidungvaonhom.cs" />
   </ItemGroup>
   <ItemGroup>
