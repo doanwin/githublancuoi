@@ -318,3 +318,6 @@ C:\Users\WTFBee\Documents\GitHub\diemdanhsv\DiemDanhSinhVien\DiemDanhSinhVien\ob
 C:\Users\WTFBee\Documents\GitHub\diemdanhsv\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.exe.licenses
 C:\Users\WTFBee\Documents\GitHub\diemdanhsv\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.exe
 C:\Users\WTFBee\Documents\GitHub\diemdanhsv\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.pdb
+C:\Users\PC-NAV\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\bin\Debug\DiemDanhSinhVien.exe.config
+C:\Users\PC-NAV\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.exe
+C:\Users\PC-NAV\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.pdb
