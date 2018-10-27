@@ -73,11 +73,29 @@
     <Compile Include="Views\formCauHinh.designer.cs">
       <DependentUpon>formCauHinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\frmBaoCaoTinhTrang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmBaoCaoTinhTrang.Designer.cs">
+      <DependentUpon>frmBaoCaoTinhTrang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\frmCaHoc.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\frmCaHoc.Designer.cs">
       <DependentUpon>frmCaHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmDiemDanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmDiemDanh.Designer.cs">
+      <DependentUpon>frmDiemDanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmGiaoVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmGiaoVien.Designer.cs">
+      <DependentUpon>frmGiaoVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\frmLogin.cs">
       <SubType>Form</SubType>
@@ -99,6 +117,12 @@
     <Compile Include="Views\frmPhanquyennguoidung.Designer.cs">
       <DependentUpon>frmPhanquyennguoidung.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\frmSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmSinhVien.Designer.cs">
+      <DependentUpon>frmSinhVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\XtraUserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -108,8 +132,17 @@
     <EmbeddedResource Include="Views\formCauHinh.resx">
       <DependentUpon>formCauHinh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmBaoCaoTinhTrang.resx">
+      <DependentUpon>frmBaoCaoTinhTrang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\frmCaHoc.resx">
       <DependentUpon>frmCaHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmDiemDanh.resx">
+      <DependentUpon>frmDiemDanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmGiaoVien.resx">
+      <DependentUpon>frmGiaoVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -130,6 +163,9 @@
     </Compile>
     <EmbeddedResource Include="Views\frmPhanquyennguoidung.resx">
       <DependentUpon>frmPhanquyennguoidung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmSinhVien.resx">
+      <DependentUpon>frmSinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\XtraUserControl1.resx">
       <DependentUpon>XtraUserControl1.cs</DependentUpon>
@@ -179,6 +215,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Folder-Sharepoint-Folder-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-list-add-user-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-list-remove-user-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-list-add-user-icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow-mail-upload-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

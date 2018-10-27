@@ -45,16 +45,16 @@
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtBuoihoc = new System.Windows.Forms.TextBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMacahoc = new System.Windows.Forms.TextBox();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_Cahoc = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
@@ -64,7 +64,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_Cahoc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -201,10 +201,10 @@
             // 
             // layoutControl1
             // 
-            this.layoutControl1.Controls.Add(this.textBox2);
+            this.layoutControl1.Controls.Add(this.txtBuoihoc);
             this.layoutControl1.Controls.Add(this.dateTimePicker2);
             this.layoutControl1.Controls.Add(this.dateTimePicker1);
-            this.layoutControl1.Controls.Add(this.textBox1);
+            this.layoutControl1.Controls.Add(this.txtMacahoc);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.layoutControl1.Location = new System.Drawing.Point(0, 32);
             this.layoutControl1.Name = "layoutControl1";
@@ -213,12 +213,12 @@
             this.layoutControl1.TabIndex = 4;
             this.layoutControl1.Text = "layoutControl1";
             // 
-            // textBox2
+            // txtBuoihoc
             // 
-            this.textBox2.Location = new System.Drawing.Point(72, 60);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(624, 20);
-            this.textBox2.TabIndex = 7;
+            this.txtBuoihoc.Location = new System.Drawing.Point(72, 60);
+            this.txtBuoihoc.Name = "txtBuoihoc";
+            this.txtBuoihoc.Size = new System.Drawing.Size(624, 20);
+            this.txtBuoihoc.TabIndex = 7;
             // 
             // dateTimePicker2
             // 
@@ -234,12 +234,12 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(280, 20);
             this.dateTimePicker1.TabIndex = 5;
             // 
-            // textBox1
+            // txtMacahoc
             // 
-            this.textBox1.Location = new System.Drawing.Point(72, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(624, 20);
-            this.textBox1.TabIndex = 4;
+            this.txtMacahoc.Location = new System.Drawing.Point(72, 12);
+            this.txtMacahoc.Name = "txtMacahoc";
+            this.txtMacahoc.Size = new System.Drawing.Size(624, 20);
+            this.txtMacahoc.TabIndex = 4;
             // 
             // layoutControlGroup1
             // 
@@ -257,7 +257,7 @@
             // 
             // layoutControlItem1
             // 
-            this.layoutControlItem1.Control = this.textBox1;
+            this.layoutControlItem1.Control = this.txtMacahoc;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(688, 24);
@@ -284,28 +284,28 @@
             // 
             // layoutControlItem4
             // 
-            this.layoutControlItem4.Control = this.textBox2;
+            this.layoutControlItem4.Control = this.txtBuoihoc;
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 48);
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Size = new System.Drawing.Size(688, 27);
             this.layoutControlItem4.Text = "Buổi học";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(57, 13);
             // 
-            // gridControl1
+            // gridControl_Cahoc
             // 
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(0, 127);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.MenuManager = this.barManager1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(708, 253);
-            this.gridControl1.TabIndex = 5;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_Cahoc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_Cahoc.Location = new System.Drawing.Point(0, 127);
+            this.gridControl_Cahoc.MainView = this.gridView1;
+            this.gridControl_Cahoc.MenuManager = this.barManager1;
+            this.gridControl_Cahoc.Name = "gridControl_Cahoc";
+            this.gridControl_Cahoc.Size = new System.Drawing.Size(708, 253);
+            this.gridControl_Cahoc.TabIndex = 5;
+            this.gridControl_Cahoc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // gridView1
             // 
-            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.GridControl = this.gridControl_Cahoc;
             this.gridView1.Name = "gridView1";
             // 
             // frmCaHoc
@@ -313,7 +313,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(708, 403);
-            this.Controls.Add(this.gridControl1);
+            this.Controls.Add(this.gridControl_Cahoc);
             this.Controls.Add(this.layoutControl1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
@@ -330,7 +330,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_Cahoc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -353,13 +353,13 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
-        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.GridControl gridControl_Cahoc;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtBuoihoc;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMacahoc;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;

@@ -76,5 +76,41 @@ namespace DiemDanhSinhVien
             }
             return false;
         }
+
+        private void btnTheodoidiemdanh_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            var form1 = new frmDiemdanh();
+            if (ExistForm(form1))
+                return;
+            form1.MdiParent = this;
+            form1.Show();
+        }
+
+        private void btnChitietgiangvien_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            var form1 = new frmGiaoVien();
+            if (ExistForm(form1))
+                return;
+            form1.MdiParent = this;
+            form1.Show();
+        }
+
+        private void btnChitietSV_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            var form1 = new frmSinhVien();
+            if (ExistForm(form1))
+                return;
+            form1.MdiParent = this;
+            form1.Show();
+        }
+
+        private void btnBaocaotinhtrang_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            var form1 = new frmBaoCaoTinhTrang();
+            if (ExistForm(form1))
+                return;
+            form1.MdiParent = this;
+            form1.Show();
+        }
     }
 }
