@@ -337,3 +337,7 @@ C:\Users\WTFBee\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien
 C:\Users\WTFBee\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.Views.XtraUserControl1.resources
 C:\Users\WTFBee\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.csproj.GenerateResource.Cache
 C:\Users\WTFBee\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.exe.licenses
+C:\Users\WTFBee\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.Views.frmBaoCaoTinhTrang.resources
+C:\Users\WTFBee\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.Views.frmDiemdanh.resources
+C:\Users\WTFBee\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.Views.frmGiaoVien.resources
+C:\Users\WTFBee\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.Views.frmSinhVien.resources
