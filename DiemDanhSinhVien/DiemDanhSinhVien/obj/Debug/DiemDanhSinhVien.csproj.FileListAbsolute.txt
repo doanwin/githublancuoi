@@ -412,3 +412,4 @@ C:\Users\PC-NAV\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien
 C:\Users\PC-NAV\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\bin\Debug\es\DevExpress.Office.v15.1.Core.resources.dll
 C:\Users\PC-NAV\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\bin\Debug\ja\DevExpress.Office.v15.1.Core.resources.dll
 C:\Users\PC-NAV\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\bin\Debug\ru\DevExpress.Office.v15.1.Core.resources.dll
+C:\Users\PC-NAV\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.Views.frmGiaoVien.resources
