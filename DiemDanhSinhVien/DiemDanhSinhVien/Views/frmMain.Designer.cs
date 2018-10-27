@@ -84,6 +84,9 @@
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbSStatus = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.MdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.ribbonPage6 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.btnChitietSV = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCL1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MdiManager)).BeginInit();
@@ -125,15 +128,17 @@
             this.barButtonItem21,
             this.barButtonItem22,
             this.btnChitietgiangvien,
-            this.barButtonItem24});
+            this.barButtonItem24,
+            this.btnChitietSV});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 32;
+            this.ribbonControl1.MaxItemId = 33;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
             this.ribbonPage2,
             this.ribbonPage4,
             this.ribbonPage3,
+            this.ribbonPage6,
             this.ribbonPage5});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
             this.ribbonControl1.Size = new System.Drawing.Size(928, 143);
@@ -662,6 +667,29 @@
             // 
             this.MdiManager.MdiParent = this;
             // 
+            // ribbonPage6
+            // 
+            this.ribbonPage6.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup15});
+            this.ribbonPage6.Name = "ribbonPage6";
+            this.ribbonPage6.Text = "Sinh viên";
+            // 
+            // ribbonPageGroup15
+            // 
+            this.ribbonPageGroup15.ItemLinks.Add(this.btnChitietSV);
+            this.ribbonPageGroup15.Name = "ribbonPageGroup15";
+            this.ribbonPageGroup15.Text = "   Thông tin                          ";
+            // 
+            // btnChitietSV
+            // 
+            this.btnChitietSV.Caption = "Chi tiết sinh viên";
+            this.btnChitietSV.Glyph = ((System.Drawing.Image)(resources.GetObject("btnChitietSV.Glyph")));
+            this.btnChitietSV.Id = 32;
+            this.btnChitietSV.Name = "btnChitietSV";
+            this.btnChitietSV.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btnChitietSV.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnChitietSV_ItemClick);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -739,6 +767,9 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager MdiManager;
+        private DevExpress.XtraBars.BarButtonItem btnChitietSV;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage6;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup15;
     }
 }
 
