@@ -16,5 +16,17 @@ namespace BLL
         {
             return nguoidung.loadNguoidung();
         }
+        public int themNguoidung(string pTendangnhap, string pMatkhau)
+        {
+            return nguoidung.themNguoidung(pTendangnhap, pMatkhau);
+        }
+        public int updateNguoidung(string pMatkhau, int? HoatDong, string Tendangnhap)
+        {
+            return nguoidung.updateNguoidung(pMatkhau, HoatDong, Tendangnhap);
+        }
+        public int xoaNguoidung(string pTenDangNhap)
+        {
+            return nguoidung.xoaNguoidung(pTenDangNhap);
+        }
     }
 }

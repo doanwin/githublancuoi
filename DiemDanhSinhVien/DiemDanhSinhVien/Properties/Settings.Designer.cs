@@ -35,5 +35,15 @@ namespace DiemDanhSinhVien.Properties {
                 this["LTWNCConn"] = value;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=WTFBEE-PC\\SQLEXPRESS;Initial Catalog=qldiemdanhsv;User ID=sa")]
+        public string qldiemdanhsvConnectionString {
+            get {
+                return ((string)(this["qldiemdanhsvConnectionString"]));
+            }
+        }
     }
 }

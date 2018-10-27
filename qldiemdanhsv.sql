@@ -701,4 +701,20 @@ alter table PHANCONG
    add constraint FK_PHANCONG_PHANCONG2_GIANGVIE foreign key (MAGV)
       references GIANGVIEN (MAGV)
 go
-
+select * from QL_NguoiDung
+select * from QL_NguoiDungNhomNguoiDung
+go
+alter Procedure deleteNguoidung @tendangnhap char(20)
+as
+begin
+	declare @dem int;
+	set @dem=(select COUNT(*) from QL_NguoiDung)
+	if(@dem >1)
+	begin
+		delete from QL_NguoiDungNhomNguoiDung where TenDangNhap=@tendangnhap
+		delete from QL_NguoiDung where TenDangNhap=@tendangnhap
+	end
+	else 
+end
+select * from QL_NhomNguoiDung
+select mh.MaManhHinh,mh.TenManHinh,pq.CoQuyen from DM_ManHinh mh left join QL_PhanQuyen pq on mh.MaManhHinh=pq.MaManhHinh
