@@ -61,6 +61,11 @@
   <ItemGroup>
     <Compile Include="ClassXuLy\LoginResult.cs" />
     <Compile Include="ClassXuLy\QL_NguoiDung.cs" />
+    <Compile Include="qldiemdanhsvDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>qldiemdanhsvDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Views\formCauHinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +77,12 @@
     </Compile>
     <Compile Include="Views\frmCaHoc.Designer.cs">
       <DependentUpon>frmCaHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmDiemDanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmDiemDanh.Designer.cs">
+      <DependentUpon>frmDiemDanh.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\frmLogin.cs">
       <SubType>Form</SubType>
@@ -110,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmCaHoc.resx">
       <DependentUpon>frmCaHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmDiemDanh.resx">
+      <DependentUpon>frmDiemDanh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -155,6 +169,17 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="qldiemdanhsvDataSet.xsc">
+      <DependentUpon>qldiemdanhsvDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="qldiemdanhsvDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>qldiemdanhsvDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="qldiemdanhsvDataSet.xss">
+      <DependentUpon>qldiemdanhsvDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Resources\Actions-list-add-user-icon.png" />
   </ItemGroup>
   <ItemGroup>
@@ -171,6 +196,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Folder-Sharepoint-Folder-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-list-add-user-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-list-remove-user-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-list-add-user-icon2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

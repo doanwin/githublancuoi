@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DiemDanhSinhVien.Views
 {
-    public partial class frmDiemDanh : Form
+    public partial class frmDiemdanh : Form
     {
-        public frmDiemDanh()
+        public frmDiemdanh()
         {
             InitializeComponent();
         }
