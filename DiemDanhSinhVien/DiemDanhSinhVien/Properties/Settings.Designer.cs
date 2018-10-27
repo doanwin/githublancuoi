@@ -12,7 +12,7 @@ namespace DiemDanhSinhVien.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -33,6 +33,28 @@ namespace DiemDanhSinhVien.Properties {
             }
             set {
                 this["LTWNCConn"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-EFTVSMO\\SQLEXPRESS;Initial Catalog=QL_SinhVien;Integrated Sec" +
+            "urity=True")]
+        public string QL_SinhVienConnectionString {
+            get {
+                return ((string)(this["QL_SinhVienConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-EFTVSMO\\SQLEXPRESS;Initial Catalog=qldiemdanhsv;User ID=sa;Pa" +
+            "ssword=sa2012")]
+        public string qldiemdanhsvConnectionString {
+            get {
+                return ((string)(this["qldiemdanhsvConnectionString"]));
             }
         }
     }
