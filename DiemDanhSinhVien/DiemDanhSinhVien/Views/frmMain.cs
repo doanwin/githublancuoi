@@ -25,7 +25,7 @@ namespace DiemDanhSinhVien
 
         private void btnPhanQuyen_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            var from = new frmPhanQuyenNguoiSuDung();
+            var from = new frmPhanquyennguoidung();
             if (ExistForm(from))
                 return;
             from.MdiParent = this;
