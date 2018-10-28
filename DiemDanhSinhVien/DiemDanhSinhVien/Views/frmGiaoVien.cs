@@ -7,38 +7,85 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
+using LinqToSQL;
 
 namespace DiemDanhSinhVien.Views
 {
     public partial class frmGiaoVien : Form
     {
+        BLLGiangvien gv = new BLLGiangvien();
+        BLLchung chungbll = new BLLchung();
+        LinqGiaovien lqGiaovien = new LinqGiaovien();
+
         public frmGiaoVien()
         {
             InitializeComponent();
+            loadGiaoVien();
+            loadCbo_Donvi();
         }
 
-        private void gIANGVIENBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        void loadGiaoVien()
         {
-            this.Validate();
-            this.gIANGVIENBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.qldiemdanhsvDataSet);
-
+            dgv_giaovien.DataSource = gv.GetData();
         }
-
-        private void gIANGVIENBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
+        void loadCbo_Donvi()
         {
-            this.Validate();
-            this.gIANGVIENBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.qldiemdanhsvDataSet);
-
+            cbo_madv.DataSource = chungbll.GetDataDonvi();
+            cbo_madv.DisplayMember = "TENDONVI";
+            cbo_madv.ValueMember = "MaDonVi";
         }
+
 
         private void frmGiaoVien_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'qldiemdanhsvDataSet.DONVI' table. You can move, or remove it, as needed.
+            this.dONVITableAdapter.Fill(this.qldiemdanhsvDataSet.DONVI);
             // TODO: This line of code loads data into the 'qldiemdanhsvDataSet.GIANGVIEN' table. You can move, or remove it, as needed.
             this.gIANGVIENTableAdapter.Fill(this.qldiemdanhsvDataSet.GIANGVIEN);
 
         }
+
+        private void dgv_giaovien_SelectionChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int r = dgv_giaovien.CurrentCell.RowIndex;
+                mAGVTextEdit.Text = dgv_giaovien.Rows[r].Cells[0].Value.ToString();
+                cbo_madv.Text = dgv_giaovien.Rows[r].Cells[1].Value.ToString();
+                hOTENTextEdit.Text = dgv_giaovien.Rows[r].Cells[2].Value.ToString();
+                tRINHDOTextEdit.Text = dgv_giaovien.Rows[r].Cells[3].Value.ToString();
+                cHUYENMONTextEdit.Text = dgv_giaovien.Rows[r].Cells[4].Value.ToString();
+            }
+            catch
+            {
+
+            }
+            
+        }
+
+        private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            GIANGVIEN gv = new GIANGVIEN();
+            gv.HOTEN = hOTENTextEdit.Text.Trim();
+            gv.MADONVI = cbo_madv.SelectedValue.ToString();
+            gv.TRINHDO = tRINHDOTextEdit.Text.Trim();
+            gv.CHUYENMON = cHUYENMONTextEdit.Text.Trim();
+            int them = lqGiaovien.themGiangvien(gv);
+            if (them == 1)
+            {
+                MessageBox.Show("Thêm thành công");
+                loadGiaoVien();
+            }
+            else if (them == 0)
+            {
+                MessageBox.Show("Thêm thất bại");
+                return;
+            }
+            else
+                MessageBox.Show("Giáo viên đã tồn tại.Vui lòng kt lại");
+        }
+
 
        
     }

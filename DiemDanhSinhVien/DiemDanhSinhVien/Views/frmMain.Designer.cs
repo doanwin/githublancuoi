@@ -51,11 +51,11 @@
             this.btnDulieudiemdanh = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
-<<<<<<< HEAD
+
             this.btnDSLop = new DevExpress.XtraBars.BarButtonItem();
-=======
+
             this.btnDanhsachlophoc = new DevExpress.XtraBars.BarButtonItem();
->>>>>>> master
+
             this.btnBaocaotinhtrang = new DevExpress.XtraBars.BarButtonItem();
             this.btnKqdiemdanh = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
@@ -124,11 +124,11 @@
             this.btnDulieudiemdanh,
             this.barButtonItem9,
             this.barButtonItem10,
-<<<<<<< HEAD
+
             this.btnDSLop,
-=======
+
             this.btnDanhsachlophoc,
->>>>>>> master
+
             this.btnBaocaotinhtrang,
             this.btnKqdiemdanh,
             this.barButtonItem14,
@@ -424,7 +424,7 @@
             this.barButtonItem10.Id = 17;
             this.barButtonItem10.Name = "barButtonItem10";
             // 
-<<<<<<< HEAD
+
             // btnDSLop
             // 
             this.btnDSLop.Caption = "Danh sách lớp học";
@@ -433,7 +433,7 @@
             this.btnDSLop.LargeGlyph = global::DiemDanhSinhVien.Properties.Resources.Folder_Sharepoint_Folder_icon;
             this.btnDSLop.LargeWidth = 70;
             this.btnDSLop.Name = "btnDSLop";
-=======
+
             // btnDanhsachlophoc
             // 
             this.btnDanhsachlophoc.Caption = "Danh sách lớp học";
@@ -443,7 +443,7 @@
             this.btnDanhsachlophoc.LargeWidth = 70;
             this.btnDanhsachlophoc.Name = "btnDanhsachlophoc";
             this.btnDanhsachlophoc.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDanhsachlophoc_ItemClick);
->>>>>>> master
+
             // 
             // btnBaocaotinhtrang
             // 
@@ -632,42 +632,42 @@
             // 
             // ribbonPageGroup5
             // 
-<<<<<<< HEAD
+
             this.ribbonPageGroup3.ImageIndex = 51;
             this.ribbonPageGroup3.ItemLinks.Add(this.btnDSCahoc);
             this.ribbonPageGroup3.ItemLinks.Add(this.btnDSLop);
             this.ribbonPageGroup3.ItemLinks.Add(this.btnBaocaotinhtrang);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "Thiết lập";
-=======
+
             this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem21);
             this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem22);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.Text = "Công việc";
->>>>>>> master
+
             // 
             // ribbonPageGroup9
             // 
-<<<<<<< HEAD
+
             this.ribbonPageGroup4.ItemLinks.Add(this.btnDulieudiemdanh);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             this.ribbonPageGroup4.Text = "Điểm danh";
-=======
+
             this.ribbonPageGroup9.ItemLinks.Add(this.btnChitietgiangvien);
             this.ribbonPageGroup9.Name = "ribbonPageGroup9";
             this.ribbonPageGroup9.Text = "Thông tin";
->>>>>>> master
+
             // 
             // ribbonPageGroup10
             // 
-<<<<<<< HEAD
+
             this.ribbonPageGroup11.ItemLinks.Add(this.btnKqdiemdanh);
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
             this.ribbonPageGroup11.Text = "Kết quả đào tạo";
-=======
+
             this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem24);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
->>>>>>> master
+
             // 
             // ribbonPage4
             // 
@@ -730,8 +730,6 @@
             // 
             // ribbonPageGroup11
             // 
-            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem13);
-            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem8);
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
             this.ribbonPageGroup11.Text = "Kết quả đào tạo";
             // 
@@ -830,11 +828,11 @@
         private DevExpress.XtraBars.BarButtonItem btnDulieudiemdanh;
         private DevExpress.XtraBars.BarButtonItem barButtonItem9;
         private DevExpress.XtraBars.BarButtonItem barButtonItem10;
-<<<<<<< HEAD
+
         private DevExpress.XtraBars.BarButtonItem btnDSLop;
-=======
+
         private DevExpress.XtraBars.BarButtonItem btnDanhsachlophoc;
->>>>>>> master
+
         private DevExpress.XtraBars.BarButtonItem btnBaocaotinhtrang;
         private DevExpress.XtraBars.BarButtonItem btnKqdiemdanh;
         private DevExpress.XtraBars.BarButtonItem barButtonItem14;

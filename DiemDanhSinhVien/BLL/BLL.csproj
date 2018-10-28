@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLLchung.cs" />
     <Compile Include="BLLGiangvien.cs" />
     <Compile Include="BLLLopmonhoc.cs" />
     <Compile Include="BLLMonhoc.cs" />

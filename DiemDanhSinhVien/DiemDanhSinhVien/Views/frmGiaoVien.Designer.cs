@@ -29,135 +29,114 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label mAGVLabel;
-            System.Windows.Forms.Label mADONVILabel;
-            System.Windows.Forms.Label hOTENLabel;
-            System.Windows.Forms.Label tRINHDOLabel;
             System.Windows.Forms.Label cHUYENMONLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGiaoVien));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.cHUYENMONTextEdit = new DevExpress.XtraEditors.TextEdit();
+            System.Windows.Forms.Label tRINHDOLabel;
+            System.Windows.Forms.Label hOTENLabel;
+            System.Windows.Forms.Label mADONVILabel;
+            System.Windows.Forms.Label mAGVLabel;
             this.gIANGVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.qldiemdanhsvDataSet = new DiemDanhSinhVien.qldiemdanhsvDataSet();
-            this.tRINHDOTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.hOTENTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.mADONVIComboBoxEdit = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.mAGVComboBoxEdit = new DevExpress.XtraEditors.ComboBoxEdit();
             this.gIANGVIENTableAdapter = new DiemDanhSinhVien.qldiemdanhsvDataSetTableAdapters.GIANGVIENTableAdapter();
             this.tableAdapterManager = new DiemDanhSinhVien.qldiemdanhsvDataSetTableAdapters.TableAdapterManager();
-            this.gIANGVIENBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.gIANGVIENBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.gridSplitContainer1 = new DevExpress.XtraGrid.GridSplitContainer();
-            this.gIANGVIENGridControl = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colHOTEN = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colMADONVI = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colMAGV = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTRINHDO = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCHUYENMON = new DevExpress.XtraGrid.Columns.GridColumn();
-            mAGVLabel = new System.Windows.Forms.Label();
-            mADONVILabel = new System.Windows.Forms.Label();
-            hOTENLabel = new System.Windows.Forms.Label();
-            tRINHDOLabel = new System.Windows.Forms.Label();
+            this.bar2 = new DevExpress.XtraBars.Bar();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.barDockControl1 = new DevExpress.XtraBars.BarDockControl();
+            this.cHUYENMONTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.tRINHDOTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.hOTENTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.mAGVTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.lapTableAdapter1 = new DiemDanhSinhVien.qldiemdanhsvDataSetTableAdapters.LAPTableAdapter();
+            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
+            this.bar1 = new DevExpress.XtraBars.Bar();
+            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
+            this.bar3 = new DevExpress.XtraBars.Bar();
+            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
+            this.dgv_giaovien = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dONVIBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dONVITableAdapter = new DiemDanhSinhVien.qldiemdanhsvDataSetTableAdapters.DONVITableAdapter();
+            this.cbo_madv = new System.Windows.Forms.ComboBox();
             cHUYENMONLabel = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cHUYENMONTextEdit.Properties)).BeginInit();
+            tRINHDOLabel = new System.Windows.Forms.Label();
+            hOTENLabel = new System.Windows.Forms.Label();
+            mADONVILabel = new System.Windows.Forms.Label();
+            mAGVLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gIANGVIENBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qldiemdanhsvDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cHUYENMONTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRINHDOTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hOTENTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mADONVIComboBoxEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mAGVComboBoxEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gIANGVIENBindingNavigator)).BeginInit();
-            this.gIANGVIENBindingNavigator.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1)).BeginInit();
-            this.gridSplitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gIANGVIENGridControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mAGVTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_giaovien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dONVIBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // mAGVLabel
-            // 
-            mAGVLabel.AutoSize = true;
-            mAGVLabel.Location = new System.Drawing.Point(65, 21);
-            mAGVLabel.Name = "mAGVLabel";
-            mAGVLabel.Size = new System.Drawing.Size(77, 13);
-            mAGVLabel.TabIndex = 0;
-            mAGVLabel.Text = "Mã giảng viên:";
-            // 
-            // mADONVILabel
-            // 
-            mADONVILabel.AutoSize = true;
-            mADONVILabel.Location = new System.Drawing.Point(79, 51);
-            mADONVILabel.Name = "mADONVILabel";
-            mADONVILabel.Size = new System.Drawing.Size(58, 13);
-            mADONVILabel.TabIndex = 2;
-            mADONVILabel.Text = "Mã đơn vị:";
-            // 
-            // hOTENLabel
-            // 
-            hOTENLabel.AutoSize = true;
-            hOTENLabel.Location = new System.Drawing.Point(151, 93);
-            hOTENLabel.Name = "hOTENLabel";
-            hOTENLabel.Size = new System.Drawing.Size(46, 13);
-            hOTENLabel.TabIndex = 4;
-            hOTENLabel.Text = "Họ Tên:";
-            // 
-            // tRINHDOLabel
-            // 
-            tRINHDOLabel.AutoSize = true;
-            tRINHDOLabel.Location = new System.Drawing.Point(335, 21);
-            tRINHDOLabel.Name = "tRINHDOLabel";
-            tRINHDOLabel.Size = new System.Drawing.Size(50, 13);
-            tRINHDOLabel.TabIndex = 6;
-            tRINHDOLabel.Text = "Trình độ:";
             // 
             // cHUYENMONLabel
             // 
             cHUYENMONLabel.AutoSize = true;
-            cHUYENMONLabel.Location = new System.Drawing.Point(315, 57);
+            cHUYENMONLabel.Location = new System.Drawing.Point(516, 124);
             cHUYENMONLabel.Name = "cHUYENMONLabel";
-            cHUYENMONLabel.Size = new System.Drawing.Size(69, 13);
-            cHUYENMONLabel.TabIndex = 8;
-            cHUYENMONLabel.Text = "Chuyên môn:";
+            cHUYENMONLabel.Size = new System.Drawing.Size(80, 13);
+            cHUYENMONLabel.TabIndex = 9;
+            cHUYENMONLabel.Text = "CHUYENMON:";
             // 
-            // panel1
+            // tRINHDOLabel
             // 
-            this.panel1.Controls.Add(cHUYENMONLabel);
-            this.panel1.Controls.Add(this.cHUYENMONTextEdit);
-            this.panel1.Controls.Add(tRINHDOLabel);
-            this.panel1.Controls.Add(this.tRINHDOTextEdit);
-            this.panel1.Controls.Add(hOTENLabel);
-            this.panel1.Controls.Add(this.hOTENTextEdit);
-            this.panel1.Controls.Add(mADONVILabel);
-            this.panel1.Controls.Add(this.mADONVIComboBoxEdit);
-            this.panel1.Controls.Add(mAGVLabel);
-            this.panel1.Controls.Add(this.mAGVComboBoxEdit);
-            this.panel1.Location = new System.Drawing.Point(242, 28);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(620, 127);
-            this.panel1.TabIndex = 0;
+            tRINHDOLabel.AutoSize = true;
+            tRINHDOLabel.Location = new System.Drawing.Point(536, 98);
+            tRINHDOLabel.Name = "tRINHDOLabel";
+            tRINHDOLabel.Size = new System.Drawing.Size(60, 13);
+            tRINHDOLabel.TabIndex = 7;
+            tRINHDOLabel.Text = "TRINHDO:";
             // 
-            // cHUYENMONTextEdit
+            // hOTENLabel
             // 
-            this.cHUYENMONTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.gIANGVIENBindingSource, "CHUYENMON", true));
-            this.cHUYENMONTextEdit.Location = new System.Drawing.Point(401, 54);
-            this.cHUYENMONTextEdit.Name = "cHUYENMONTextEdit";
-            this.cHUYENMONTextEdit.Size = new System.Drawing.Size(100, 20);
-            this.cHUYENMONTextEdit.TabIndex = 9;
+            hOTENLabel.AutoSize = true;
+            hOTENLabel.Location = new System.Drawing.Point(63, 146);
+            hOTENLabel.Name = "hOTENLabel";
+            hOTENLabel.Size = new System.Drawing.Size(48, 13);
+            hOTENLabel.TabIndex = 5;
+            hOTENLabel.Text = "HOTEN:";
+            // 
+            // mADONVILabel
+            // 
+            mADONVILabel.AutoSize = true;
+            mADONVILabel.Location = new System.Drawing.Point(63, 120);
+            mADONVILabel.Name = "mADONVILabel";
+            mADONVILabel.Size = new System.Drawing.Size(60, 13);
+            mADONVILabel.TabIndex = 3;
+            mADONVILabel.Text = "MADONVI:";
+            // 
+            // mAGVLabel
+            // 
+            mAGVLabel.AutoSize = true;
+            mAGVLabel.Location = new System.Drawing.Point(63, 94);
+            mAGVLabel.Name = "mAGVLabel";
+            mAGVLabel.Size = new System.Drawing.Size(41, 13);
+            mAGVLabel.TabIndex = 1;
+            mAGVLabel.Text = "MAGV:";
             // 
             // gIANGVIENBindingSource
             // 
@@ -168,42 +147,6 @@
             // 
             this.qldiemdanhsvDataSet.DataSetName = "qldiemdanhsvDataSet";
             this.qldiemdanhsvDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tRINHDOTextEdit
-            // 
-            this.tRINHDOTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.gIANGVIENBindingSource, "TRINHDO", true));
-            this.tRINHDOTextEdit.Location = new System.Drawing.Point(401, 18);
-            this.tRINHDOTextEdit.Name = "tRINHDOTextEdit";
-            this.tRINHDOTextEdit.Size = new System.Drawing.Size(100, 20);
-            this.tRINHDOTextEdit.TabIndex = 7;
-            // 
-            // hOTENTextEdit
-            // 
-            this.hOTENTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.gIANGVIENBindingSource, "HOTEN", true));
-            this.hOTENTextEdit.Location = new System.Drawing.Point(205, 90);
-            this.hOTENTextEdit.Name = "hOTENTextEdit";
-            this.hOTENTextEdit.Size = new System.Drawing.Size(261, 20);
-            this.hOTENTextEdit.TabIndex = 5;
-            // 
-            // mADONVIComboBoxEdit
-            // 
-            this.mADONVIComboBoxEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.gIANGVIENBindingSource, "MADONVI", true));
-            this.mADONVIComboBoxEdit.Location = new System.Drawing.Point(145, 48);
-            this.mADONVIComboBoxEdit.Name = "mADONVIComboBoxEdit";
-            this.mADONVIComboBoxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.mADONVIComboBoxEdit.Size = new System.Drawing.Size(100, 20);
-            this.mADONVIComboBoxEdit.TabIndex = 3;
-            // 
-            // mAGVComboBoxEdit
-            // 
-            this.mAGVComboBoxEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.gIANGVIENBindingSource, "MAGV", true));
-            this.mAGVComboBoxEdit.Location = new System.Drawing.Point(145, 18);
-            this.mAGVComboBoxEdit.Name = "mAGVComboBoxEdit";
-            this.mAGVComboBoxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.mAGVComboBoxEdit.Size = new System.Drawing.Size(100, 20);
-            this.mAGVComboBoxEdit.TabIndex = 1;
             // 
             // gIANGVIENTableAdapter
             // 
@@ -232,236 +175,341 @@
             this.tableAdapterManager.SINHVIENTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = DiemDanhSinhVien.qldiemdanhsvDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // gIANGVIENBindingNavigator
+            // bar2
             // 
-            this.gIANGVIENBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.gIANGVIENBindingNavigator.BindingSource = this.gIANGVIENBindingSource;
-            this.gIANGVIENBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.gIANGVIENBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.gIANGVIENBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.gIANGVIENBindingNavigatorSaveItem});
-            this.gIANGVIENBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.gIANGVIENBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.gIANGVIENBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.gIANGVIENBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.gIANGVIENBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.gIANGVIENBindingNavigator.Name = "gIANGVIENBindingNavigator";
-            this.gIANGVIENBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.gIANGVIENBindingNavigator.Size = new System.Drawing.Size(1076, 25);
-            this.gIANGVIENBindingNavigator.TabIndex = 1;
-            this.gIANGVIENBindingNavigator.Text = "bindingNavigator1";
+            this.bar2.BarName = "Main menu";
+            this.bar2.DockCol = 0;
+            this.bar2.DockRow = 0;
+            this.bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.bar2.OptionsBar.MultiLine = true;
+            this.bar2.OptionsBar.UseWholeRow = true;
+            this.bar2.Text = "Main menu";
             // 
-            // bindingNavigatorAddNewItem
+            // barButtonItem1
             // 
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(74, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
+            this.barButtonItem1.Caption = "Thêm";
+            this.barButtonItem1.Glyph = global::DiemDanhSinhVien.Properties.Resources.Actions_list_add_user_icon;
+            this.barButtonItem1.Id = 0;
+            this.barButtonItem1.Name = "barButtonItem1";
             // 
-            // bindingNavigatorCountItem
+            // barButtonItem6
             // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            this.barButtonItem6.Caption = "Xóa";
+            this.barButtonItem6.Glyph = global::DiemDanhSinhVien.Properties.Resources.Actions_list_remove_user_icon;
+            this.barButtonItem6.Id = 8;
+            this.barButtonItem6.Name = "barButtonItem6";
             // 
-            // bindingNavigatorDeleteItem
+            // barButtonItem7
             // 
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(60, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.barButtonItem7.Caption = "Cập nhật";
+            this.barButtonItem7.Glyph = global::DiemDanhSinhVien.Properties.Resources.Refresh_icon;
+            this.barButtonItem7.Id = 9;
+            this.barButtonItem7.Name = "barButtonItem7";
             // 
-            // bindingNavigatorMoveFirstItem
+            // barButtonItem8
             // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
+            this.barButtonItem8.Caption = "Lưu lại";
+            this.barButtonItem8.Glyph = global::DiemDanhSinhVien.Properties.Resources.Open_folder_accept_icon;
+            this.barButtonItem8.Id = 10;
+            this.barButtonItem8.Name = "barButtonItem8";
             // 
-            // bindingNavigatorMovePreviousItem
+            // barDockControl1
             // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+            this.barDockControl1.CausesValidation = false;
+            this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControl1.Location = new System.Drawing.Point(0, 0);
+            this.barDockControl1.Size = new System.Drawing.Size(0, 0);
             // 
-            // bindingNavigatorSeparator
+            // cHUYENMONTextEdit
             // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.cHUYENMONTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.gIANGVIENBindingSource, "CHUYENMON", true));
+            this.cHUYENMONTextEdit.Location = new System.Drawing.Point(622, 121);
+            this.cHUYENMONTextEdit.Name = "cHUYENMONTextEdit";
+            this.cHUYENMONTextEdit.Size = new System.Drawing.Size(256, 20);
+            this.cHUYENMONTextEdit.TabIndex = 10;
             // 
-            // bindingNavigatorPositionItem
+            // tRINHDOTextEdit
             // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Position";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
+            this.tRINHDOTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.gIANGVIENBindingSource, "TRINHDO", true));
+            this.tRINHDOTextEdit.Location = new System.Drawing.Point(622, 95);
+            this.tRINHDOTextEdit.Name = "tRINHDOTextEdit";
+            this.tRINHDOTextEdit.Size = new System.Drawing.Size(256, 20);
+            this.tRINHDOTextEdit.TabIndex = 8;
             // 
-            // bindingNavigatorSeparator1
+            // hOTENTextEdit
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.hOTENTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.gIANGVIENBindingSource, "HOTEN", true));
+            this.hOTENTextEdit.Location = new System.Drawing.Point(149, 143);
+            this.hOTENTextEdit.Name = "hOTENTextEdit";
+            this.hOTENTextEdit.Size = new System.Drawing.Size(268, 20);
+            this.hOTENTextEdit.TabIndex = 6;
             // 
-            // bindingNavigatorMoveNextItem
+            // mAGVTextEdit
             // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
+            this.mAGVTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.gIANGVIENBindingSource, "MAGV", true));
+            this.mAGVTextEdit.Enabled = false;
+            this.mAGVTextEdit.Location = new System.Drawing.Point(149, 91);
+            this.mAGVTextEdit.Name = "mAGVTextEdit";
+            this.mAGVTextEdit.Size = new System.Drawing.Size(268, 20);
+            this.mAGVTextEdit.TabIndex = 2;
             // 
-            // bindingNavigatorMoveLastItem
+            // barButtonItem5
             // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
+            this.barButtonItem5.Id = -1;
+            this.barButtonItem5.Name = "barButtonItem5";
             // 
-            // bindingNavigatorSeparator2
+            // barButtonItem4
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.barButtonItem4.Id = -1;
+            this.barButtonItem4.Name = "barButtonItem4";
             // 
-            // gIANGVIENBindingNavigatorSaveItem
+            // barButtonItem3
             // 
-            this.gIANGVIENBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("gIANGVIENBindingNavigatorSaveItem.Image")));
-            this.gIANGVIENBindingNavigatorSaveItem.Name = "gIANGVIENBindingNavigatorSaveItem";
-            this.gIANGVIENBindingNavigatorSaveItem.Size = new System.Drawing.Size(78, 22);
-            this.gIANGVIENBindingNavigatorSaveItem.Text = "Save Data";
-            this.gIANGVIENBindingNavigatorSaveItem.Click += new System.EventHandler(this.gIANGVIENBindingNavigatorSaveItem_Click_1);
+            this.barButtonItem3.Id = -1;
+            this.barButtonItem3.Name = "barButtonItem3";
             // 
-            // panel2
+            // barButtonItem2
             // 
-            this.panel2.Controls.Add(this.gridSplitContainer1);
-            this.panel2.Location = new System.Drawing.Point(244, 161);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(620, 304);
-            this.panel2.TabIndex = 10;
+            this.barButtonItem2.Id = -1;
+            this.barButtonItem2.Name = "barButtonItem2";
             // 
-            // gridSplitContainer1
+            // lapTableAdapter1
             // 
-            this.gridSplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridSplitContainer1.Grid = this.gIANGVIENGridControl;
-            this.gridSplitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.gridSplitContainer1.Name = "gridSplitContainer1";
-            this.gridSplitContainer1.Panel1.Controls.Add(this.gIANGVIENGridControl);
-            this.gridSplitContainer1.Size = new System.Drawing.Size(620, 304);
-            this.gridSplitContainer1.TabIndex = 0;
+            this.lapTableAdapter1.ClearBeforeFill = true;
             // 
-            // gIANGVIENGridControl
+            // barManager1
             // 
-            this.gIANGVIENGridControl.DataSource = this.gIANGVIENBindingSource;
-            this.gIANGVIENGridControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gIANGVIENGridControl.Location = new System.Drawing.Point(0, 0);
-            this.gIANGVIENGridControl.MainView = this.gridView1;
-            this.gIANGVIENGridControl.Name = "gIANGVIENGridControl";
-            this.gIANGVIENGridControl.Size = new System.Drawing.Size(620, 304);
-            this.gIANGVIENGridControl.TabIndex = 0;
-            this.gIANGVIENGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
+            this.barManager1.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
+            this.bar1,
+            this.bar3});
+            this.barManager1.DockControls.Add(this.barDockControlTop);
+            this.barManager1.DockControls.Add(this.barDockControlBottom);
+            this.barManager1.DockControls.Add(this.barDockControlLeft);
+            this.barManager1.DockControls.Add(this.barDockControlRight);
+            this.barManager1.Form = this;
+            this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.barButtonItem9,
+            this.barButtonItem13,
+            this.barButtonItem14,
+            this.barButtonItem15,
+            this.barButtonItem16,
+            this.barButtonItem10,
+            this.barButtonItem11,
+            this.barButtonItem12});
+            this.barManager1.MainMenu = this.bar1;
+            this.barManager1.MaxItemId = 11;
+            this.barManager1.StatusBar = this.bar3;
             // 
-            // gridView1
+            // bar1
             // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colHOTEN,
-            this.colMADONVI,
-            this.colMAGV,
-            this.colTRINHDO,
-            this.colCHUYENMON});
-            this.gridView1.GridControl = this.gIANGVIENGridControl;
-            this.gridView1.Name = "gridView1";
+            this.bar1.BarName = "Main menu";
+            this.bar1.DockCol = 0;
+            this.bar1.DockRow = 0;
+            this.bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.bar1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem9, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem10, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem11, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem12, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
+            this.bar1.OptionsBar.MultiLine = true;
+            this.bar1.OptionsBar.UseWholeRow = true;
+            this.bar1.Text = "Main menu";
             // 
-            // colHOTEN
+            // barButtonItem9
             // 
-            this.colHOTEN.Caption = "Họ Tên";
-            this.colHOTEN.FieldName = "HOTEN";
-            this.colHOTEN.Name = "colHOTEN";
-            this.colHOTEN.Visible = true;
-            this.colHOTEN.VisibleIndex = 2;
+            this.barButtonItem9.Caption = "Thêm";
+            this.barButtonItem9.Glyph = global::DiemDanhSinhVien.Properties.Resources.Actions_list_add_user_icon;
+            this.barButtonItem9.Id = 0;
+            this.barButtonItem9.Name = "barButtonItem9";
+            this.barButtonItem9.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9_ItemClick);
             // 
-            // colMADONVI
+            // barButtonItem10
             // 
-            this.colMADONVI.Caption = "Mã đơn vị";
-            this.colMADONVI.FieldName = "MADONVI";
-            this.colMADONVI.Name = "colMADONVI";
-            this.colMADONVI.Visible = true;
-            this.colMADONVI.VisibleIndex = 1;
+            this.barButtonItem10.Caption = "Xóa";
+            this.barButtonItem10.Glyph = global::DiemDanhSinhVien.Properties.Resources.Actions_list_remove_user_icon;
+            this.barButtonItem10.Id = 8;
+            this.barButtonItem10.Name = "barButtonItem10";
             // 
-            // colMAGV
+            // barButtonItem11
             // 
-            this.colMAGV.Caption = "Mã giảng viên";
-            this.colMAGV.FieldName = "MAGV";
-            this.colMAGV.Name = "colMAGV";
-            this.colMAGV.Visible = true;
-            this.colMAGV.VisibleIndex = 0;
+            this.barButtonItem11.Caption = "Cập nhật";
+            this.barButtonItem11.Glyph = global::DiemDanhSinhVien.Properties.Resources.Refresh_icon;
+            this.barButtonItem11.Id = 9;
+            this.barButtonItem11.Name = "barButtonItem11";
             // 
-            // colTRINHDO
+            // barButtonItem12
             // 
-            this.colTRINHDO.Caption = "Trình độ";
-            this.colTRINHDO.FieldName = "TRINHDO";
-            this.colTRINHDO.Name = "colTRINHDO";
-            this.colTRINHDO.Visible = true;
-            this.colTRINHDO.VisibleIndex = 3;
+            this.barButtonItem12.Caption = "Lưu lại";
+            this.barButtonItem12.Glyph = global::DiemDanhSinhVien.Properties.Resources.Open_folder_accept_icon;
+            this.barButtonItem12.Id = 10;
+            this.barButtonItem12.Name = "barButtonItem12";
             // 
-            // colCHUYENMON
+            // bar3
             // 
-            this.colCHUYENMON.Caption = "Chuyên môn";
-            this.colCHUYENMON.FieldName = "CHUYENMON";
-            this.colCHUYENMON.Name = "colCHUYENMON";
-            this.colCHUYENMON.Visible = true;
-            this.colCHUYENMON.VisibleIndex = 4;
+            this.bar3.BarName = "Status bar";
+            this.bar3.CanDockStyle = DevExpress.XtraBars.BarCanDockStyle.Bottom;
+            this.bar3.DockCol = 0;
+            this.bar3.DockRow = 0;
+            this.bar3.DockStyle = DevExpress.XtraBars.BarDockStyle.Bottom;
+            this.bar3.OptionsBar.AllowQuickCustomization = false;
+            this.bar3.OptionsBar.DrawDragBorder = false;
+            this.bar3.OptionsBar.UseWholeRow = true;
+            this.bar3.Text = "Status bar";
+            // 
+            // barDockControlTop
+            // 
+            this.barDockControlTop.CausesValidation = false;
+            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Size = new System.Drawing.Size(1244, 32);
+            // 
+            // barDockControlBottom
+            // 
+            this.barDockControlBottom.CausesValidation = false;
+            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 534);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1244, 23);
+            // 
+            // barDockControlLeft
+            // 
+            this.barDockControlLeft.CausesValidation = false;
+            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 32);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 502);
+            // 
+            // barDockControlRight
+            // 
+            this.barDockControlRight.CausesValidation = false;
+            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControlRight.Location = new System.Drawing.Point(1244, 32);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 502);
+            // 
+            // barButtonItem13
+            // 
+            this.barButtonItem13.Caption = "Xóa";
+            this.barButtonItem13.Glyph = global::DiemDanhSinhVien.Properties.Resources.Actions_list_remove_user_icon;
+            this.barButtonItem13.Id = 1;
+            this.barButtonItem13.Name = "barButtonItem13";
+            // 
+            // barButtonItem14
+            // 
+            this.barButtonItem14.Caption = "Sửa";
+            this.barButtonItem14.Id = 2;
+            this.barButtonItem14.Name = "barButtonItem14";
+            // 
+            // barButtonItem15
+            // 
+            this.barButtonItem15.Caption = "Lưu lại";
+            this.barButtonItem15.Id = 3;
+            this.barButtonItem15.Name = "barButtonItem15";
+            // 
+            // barButtonItem16
+            // 
+            this.barButtonItem16.Caption = "Xóa";
+            this.barButtonItem16.Id = 5;
+            this.barButtonItem16.Name = "barButtonItem16";
+            // 
+            // dgv_giaovien
+            // 
+            this.dgv_giaovien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_giaovien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5});
+            this.dgv_giaovien.Location = new System.Drawing.Point(66, 197);
+            this.dgv_giaovien.Name = "dgv_giaovien";
+            this.dgv_giaovien.Size = new System.Drawing.Size(796, 314);
+            this.dgv_giaovien.TabIndex = 15;
+            this.dgv_giaovien.SelectionChanged += new System.EventHandler(this.dgv_giaovien_SelectionChanged);
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "MAGV";
+            this.Column1.HeaderText = "MÃ GIÁO VIÊN";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 150;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "MADONVI";
+            this.Column2.HeaderText = "MÃ ĐƠN VỊ";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "HOTEN";
+            this.Column3.HeaderText = "HỌ TÊN";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 200;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "TRINHDO";
+            this.Column4.HeaderText = "TRÌNH ĐỘ";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 150;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "CHUYEMON";
+            this.Column5.HeaderText = "CHUYÊN MÔN";
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 150;
+            // 
+            // dONVIBindingSource
+            // 
+            this.dONVIBindingSource.DataMember = "DONVI";
+            this.dONVIBindingSource.DataSource = this.qldiemdanhsvDataSet;
+            // 
+            // dONVITableAdapter
+            // 
+            this.dONVITableAdapter.ClearBeforeFill = true;
+            // 
+            // cbo_madv
+            // 
+            this.cbo_madv.DataSource = this.dONVIBindingSource;
+            this.cbo_madv.DisplayMember = "TENDONVI";
+            this.cbo_madv.FormattingEnabled = true;
+            this.cbo_madv.Location = new System.Drawing.Point(149, 117);
+            this.cbo_madv.Name = "cbo_madv";
+            this.cbo_madv.Size = new System.Drawing.Size(268, 21);
+            this.cbo_madv.TabIndex = 19;
+            this.cbo_madv.ValueMember = "MADONVI";
             // 
             // frmGiaoVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1076, 557);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.gIANGVIENBindingNavigator);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(1244, 557);
+            this.Controls.Add(this.cbo_madv);
+            this.Controls.Add(this.dgv_giaovien);
+            this.Controls.Add(mAGVLabel);
+            this.Controls.Add(this.mAGVTextEdit);
+            this.Controls.Add(mADONVILabel);
+            this.Controls.Add(hOTENLabel);
+            this.Controls.Add(this.hOTENTextEdit);
+            this.Controls.Add(tRINHDOLabel);
+            this.Controls.Add(this.tRINHDOTextEdit);
+            this.Controls.Add(cHUYENMONLabel);
+            this.Controls.Add(this.cHUYENMONTextEdit);
+            this.Controls.Add(this.barDockControlLeft);
+            this.Controls.Add(this.barDockControlRight);
+            this.Controls.Add(this.barDockControlBottom);
+            this.Controls.Add(this.barDockControlTop);
             this.Name = "frmGiaoVien";
             this.Text = "frmGiaoVien";
             this.Load += new System.EventHandler(this.frmGiaoVien_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cHUYENMONTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gIANGVIENBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qldiemdanhsvDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cHUYENMONTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRINHDOTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hOTENTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mADONVIComboBoxEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mAGVComboBoxEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gIANGVIENBindingNavigator)).EndInit();
-            this.gIANGVIENBindingNavigator.ResumeLayout(false);
-            this.gIANGVIENBindingNavigator.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1)).EndInit();
-            this.gridSplitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gIANGVIENGridControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mAGVTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_giaovien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dONVIBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -469,37 +517,48 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
         private qldiemdanhsvDataSet qldiemdanhsvDataSet;
         private System.Windows.Forms.BindingSource gIANGVIENBindingSource;
         private qldiemdanhsvDataSetTableAdapters.GIANGVIENTableAdapter gIANGVIENTableAdapter;
         private qldiemdanhsvDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator gIANGVIENBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton gIANGVIENBindingNavigatorSaveItem;
+        private DevExpress.XtraBars.Bar bar2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem7;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem8;
+        private DevExpress.XtraBars.BarDockControl barDockControl1;
         private DevExpress.XtraEditors.TextEdit cHUYENMONTextEdit;
         private DevExpress.XtraEditors.TextEdit tRINHDOTextEdit;
         private DevExpress.XtraEditors.TextEdit hOTENTextEdit;
-        private DevExpress.XtraEditors.ComboBoxEdit mADONVIComboBoxEdit;
-        private DevExpress.XtraEditors.ComboBoxEdit mAGVComboBoxEdit;
-        private System.Windows.Forms.Panel panel2;
-        private DevExpress.XtraGrid.GridControl gIANGVIENGridControl;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraGrid.GridSplitContainer gridSplitContainer1;
-        private DevExpress.XtraGrid.Columns.GridColumn colHOTEN;
-        private DevExpress.XtraGrid.Columns.GridColumn colMADONVI;
-        private DevExpress.XtraGrid.Columns.GridColumn colMAGV;
-        private DevExpress.XtraGrid.Columns.GridColumn colTRINHDO;
-        private DevExpress.XtraGrid.Columns.GridColumn colCHUYENMON;
+        private DevExpress.XtraEditors.TextEdit mAGVTextEdit;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private qldiemdanhsvDataSetTableAdapters.LAPTableAdapter lapTableAdapter1;
+        private DevExpress.XtraBars.BarManager barManager1;
+        private DevExpress.XtraBars.Bar bar1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem9;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem10;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem11;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem12;
+        private DevExpress.XtraBars.Bar bar3;
+        private DevExpress.XtraBars.BarDockControl barDockControlTop;
+        private DevExpress.XtraBars.BarDockControl barDockControlBottom;
+        private DevExpress.XtraBars.BarDockControl barDockControlLeft;
+        private DevExpress.XtraBars.BarDockControl barDockControlRight;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem13;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem14;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem15;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem16;
+        private System.Windows.Forms.DataGridView dgv_giaovien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.BindingSource dONVIBindingSource;
+        private qldiemdanhsvDataSetTableAdapters.DONVITableAdapter dONVITableAdapter;
+        private System.Windows.Forms.ComboBox cbo_madv;
     }
 }

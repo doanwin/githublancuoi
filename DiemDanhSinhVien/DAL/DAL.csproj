@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DALchung.cs" />
     <Compile Include="DALLopmonhoc.cs" />
     <Compile Include="DALMonhoc.cs" />
     <Compile Include="DALPhonghoc.cs" />

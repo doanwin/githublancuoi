@@ -29,3 +29,8 @@ C:\Users\PC-NAV\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DAL\bin\Debug\DA
 C:\Users\PC-NAV\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DAL\obj\Debug\DAL.dll
 C:\Users\PC-NAV\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DAL\obj\Debug\DAL.pdb
 >>>>>>> master
+D:\githublancuoi\DiemDanhSinhVien\DAL\bin\Debug\DAL.dll.config
+D:\githublancuoi\DiemDanhSinhVien\DAL\bin\Debug\DAL.dll
+D:\githublancuoi\DiemDanhSinhVien\DAL\bin\Debug\DAL.pdb
+D:\githublancuoi\DiemDanhSinhVien\DAL\obj\Debug\DAL.dll
+D:\githublancuoi\DiemDanhSinhVien\DAL\obj\Debug\DAL.pdb
