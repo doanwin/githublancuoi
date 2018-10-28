@@ -646,7 +646,15 @@
             this.groupBox1.Controls.Add(this.dgv_nguoidungnhomnguoidung);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.cbo_nhomnguoidung);
+<<<<<<< HEAD
             this.groupBox1.Location = new System.Drawing.Point(645, 6);
+=======
+//<<<<<<< HEAD
+            this.groupBox1.Location = new System.Drawing.Point(91, 61);
+//=======
+            this.groupBox1.Location = new System.Drawing.Point(616, 41);
+//>>>>>>> master
+>>>>>>> master
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(472, 277);
             this.groupBox1.TabIndex = 16;
