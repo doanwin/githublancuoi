@@ -39,7 +39,7 @@ namespace DiemDanhSinhVien
             daUser.Fill(dt);
             if (dt.Rows.Count == 0)
                 return 0;//user không tồn tại
-            else if (dt.Rows[0][2] == null || dt.Rows[0][2].ToString() == "False")
+            else if  (Convert.ToInt32( dt.Rows[0][2].ToString()) == 1)
                 return 1;// Không hoạt động
             else
                 return 2; // Đăng nhập thành công

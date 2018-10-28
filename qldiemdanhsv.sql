@@ -716,5 +716,10 @@ begin
 	end
 	else 
 end
-select * from QL_NhomNguoiDung
-select mh.MaManhHinh,mh.TenManHinh,pq.CoQuyen from DM_ManHinh mh left join QL_PhanQuyen pq on mh.MaManhHinh=pq.MaManhHinh
+select * from DM_ManHinh
+select pq.MaManhHinh,mh.TenManHinh,pq.CoQuyen from QL_PhanQuyen pq,DM_ManHinh mh where pq.MaManhHinh=mh.MaManhHinh and MaNhomNguoiDung='user'
+
+alter table QL_PhanQuyen
+add Constraint df_coquyen default 1 for CoQuyen
+select * from QL_PhanQuyen
+delete QL_PhanQuyen where MaNhomNguoiDung='admin' and MaManhHinh='10'

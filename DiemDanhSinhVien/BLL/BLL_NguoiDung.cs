@@ -28,5 +28,9 @@ namespace BLL
         {
             return nguoidung.xoaNguoidung(pTenDangNhap);
         }
+        public DataTable getNguoiDungByTen(string TenDangNhap)
+        {
+            return nguoidung.getNguoiDungByTen(TenDangNhap);
+        }
     }
 }
