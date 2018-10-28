@@ -442,3 +442,6 @@ C:\Users\PC-NAV\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien
 C:\Users\PC-NAV\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.exe.licenses
 C:\Users\PC-NAV\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.Views.frmLopMonHoc.resources
 >>>>>>> master
+C:\Users\PCHOANG\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\bin\Debug\DiemDanhSinhVien.exe.config
+C:\Users\PCHOANG\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.exe
+C:\Users\PCHOANG\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.pdb
