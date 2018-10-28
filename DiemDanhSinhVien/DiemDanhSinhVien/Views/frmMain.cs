@@ -112,5 +112,14 @@ namespace DiemDanhSinhVien
             form1.MdiParent = this;
             form1.Show();
         }
+
+        private void btnDanhsachlophoc_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            var form1 = new frmLopMonHoc();
+            if (ExistForm(form1))
+                return;
+            form1.MdiParent = this;
+            form1.Show();
+        }
     }
 }

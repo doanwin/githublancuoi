@@ -21,3 +21,8 @@ C:\Users\WTFBee\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DAL\bin\Debug\DA
 C:\Users\WTFBee\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DAL\bin\Debug\DAL.pdb
 C:\Users\WTFBee\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DAL\obj\Debug\DAL.pdb
 C:\Users\WTFBee\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\PC-NAV\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DAL\bin\Debug\DAL.dll.config
+C:\Users\PC-NAV\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DAL\bin\Debug\DAL.dll
+C:\Users\PC-NAV\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DAL\bin\Debug\DAL.pdb
+C:\Users\PC-NAV\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DAL\obj\Debug\DAL.dll
+C:\Users\PC-NAV\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DAL\obj\Debug\DAL.pdb
