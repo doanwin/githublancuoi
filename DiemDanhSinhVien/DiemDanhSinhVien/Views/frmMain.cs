@@ -1,4 +1,6 @@
-﻿using DevExpress.XtraEditors;
+﻿using DevExpress.XtraBars;
+using DevExpress.XtraEditors;
+using DiemDanhSinhVien.ClassXuLy;
 using DiemDanhSinhVien.Views;
 using System;
 using System.Collections.Generic;
@@ -8,20 +10,26 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using BLL;
 
 namespace DiemDanhSinhVien
 {
     public partial class frmMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public frmMain()
+        BLL_DM_ManHinh manhinh = new BLL_DM_ManHinh();
+        private DTO_NguoiDung nguoiDung;
+
+        public DTO_NguoiDung NguoiDung
+        {
+            get { return nguoiDung; }
+            set { nguoiDung = value; }
+        }
+        public frmMain(DTO_NguoiDung nguoiDung)
         {
             InitializeComponent();
+            this.NguoiDung = nguoiDung;
         }
 
-        private void tabHienThi_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnPhanQuyen_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -31,31 +39,8 @@ namespace DiemDanhSinhVien
             from.MdiParent = this;
             from.Show();
         }
-
-       /* private Form KiemTraTonTai(Type fType)
-        {
-            foreach(Form f in this.MdiChildren)
-            {
-                if (f.GetType() == fType)
-                {
-                    return f;
-                }
-            }
-            return null;
-        }*/
         private void btnDSCahoc_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-           /* Form frm = this.KiemTraTonTai(typeof(frmCaHoc));
-            if (frm != null)
-            {
-                frm.Activate();
-            }
-            else
-            {
-                frmCaHoc f = new frmCaHoc();
-                f.MdiParent = this;
-                f.Show();
-            }*/
             var form = new frmCaHoc();
 
             if (ExistForm(form))
@@ -111,6 +96,12 @@ namespace DiemDanhSinhVien
                 return;
             form1.MdiParent = this;
             form1.Show();
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            stt_ngaygio.Caption = DateTime.Now.ToString();
+            stt_user.Caption = "Xin chào, " + NguoiDung.TenDangNhap;
         }
     }
 }

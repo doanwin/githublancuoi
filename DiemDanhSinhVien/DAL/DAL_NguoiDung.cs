@@ -29,5 +29,9 @@ namespace DAL
         {
             return atp_Nguoidung.deleteNguoidung(pTenDangNhap);
         }
+        public DataTable getNguoiDungByTen(string TenDangNhap)
+        {
+            return atp_Nguoidung.GetDataBy1(TenDangNhap);
+        }
     }
 }

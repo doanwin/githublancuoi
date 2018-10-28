@@ -15,5 +15,9 @@ namespace DAL
         {
             return atp_nhomnguoidung.GetData();
         }
+        public int insertThemNhom(string MaNhom,string TenNhom,string GhiChu)
+        {
+            return atp_nhomnguoidung.Insert(MaNhom, TenNhom, GhiChu);
+        }
     }
 }

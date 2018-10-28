@@ -11,9 +11,9 @@ namespace DAL
     public class DAL_QuyenChucNang
     {
         QuyenChucNangTableAdapter atp_quyenchucnang = new QuyenChucNangTableAdapter();
-        public DataTable GetDataQuyenChucNang()
+        public DataTable GetDataQuyenChucNang(string manhom)
         {
-            return atp_quyenchucnang.GetData();
+            return atp_quyenchucnang.GetData(manhom);
         }
     }
 }

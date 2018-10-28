@@ -341,3 +341,4 @@ C:\Users\WTFBee\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien
 C:\Users\WTFBee\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.Views.frmDiemdanh.resources
 C:\Users\WTFBee\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.Views.frmGiaoVien.resources
 C:\Users\WTFBee\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.Views.frmSinhVien.resources
+C:\Users\WTFBee\Documents\GitHub\githublancuoi\DiemDanhSinhVien\DiemDanhSinhVien\obj\Debug\DiemDanhSinhVien.Views.frmPhanquyen.resources

@@ -15,5 +15,9 @@ namespace BLL
         {
             return nhomnguoidung.loadNhomnguoidung();
         }
+        public int insertThemNhom(string MaNhom, string TenNhom, string GhiChu)
+        {
+            return nhomnguoidung.insertThemNhom(MaNhom, TenNhom, GhiChu);
+        }
     }
 }

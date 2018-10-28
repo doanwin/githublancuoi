@@ -8,19 +8,28 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
+using DiemDanhSinhVien.ClassXuLy;
 
 namespace DiemDanhSinhVien
 {
     public partial class Login : Form
     {
-        
+        BLL_NguoiDung nguoidungBLL = new BLL_NguoiDung();
         QL_NguoiDung Cauhinh = new QL_NguoiDung();
+        private DTO_NguoiDung nguoiDung;
+
+        public DTO_NguoiDung NguoiDung
+        {
+            get { return nguoiDung; }
+            set { nguoiDung = value; }
+        }
         public Login()
         {
             InitializeComponent();
         }
         public void ProcessLogin()
         {
+
             int result;
             result = Cauhinh.Check_User(txtDangNhap.Text, txtMatKhau.Text);
             if (result == 0)
@@ -33,8 +42,16 @@ namespace DiemDanhSinhVien
                 MessageBox.Show("Tài khoản bị khóa");
                 return;
             }
+            DataTable table = nguoidungBLL.getNguoiDungByTen(txtDangNhap.Text.Trim());
+            foreach (DataRow item in table.Rows)
+            {
+                nguoiDung = new DTO_NguoiDung();
+                nguoiDung.TenDangNhap = item.ItemArray[0].ToString();
+                nguoiDung.MatKhau = item.ItemArray[1].ToString();
+                nguoiDung.HoatDong = Convert.ToInt32(item.ItemArray[2]);
+            }
             this.Hide();
-            frmMain frmMnger = new frmMain();
+            frmMain frmMnger = new frmMain(NguoiDung);
             frmMnger.ShowDialog();
             this.Show();
         }

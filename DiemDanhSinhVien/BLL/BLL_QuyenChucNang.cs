@@ -11,9 +11,9 @@ namespace BLL
     public class BLL_QuyenChucNang
     {
         DAL_QuyenChucNang quyenchucnang = new DAL_QuyenChucNang();
-        public DataTable GetDataQuyenChucNang()
+        public DataTable GetDataQuyenChucNang(string manhom)
         {
-            return quyenchucnang.GetDataQuyenChucNang();
+            return quyenchucnang.GetDataQuyenChucNang(manhom);
         }
     }
 }
