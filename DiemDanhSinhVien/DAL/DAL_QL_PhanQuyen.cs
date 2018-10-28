@@ -8,9 +8,8 @@ using System.Data;
 
 namespace DAL
 {
-    public class QL_PhanQuyen
+    public class DAL_QL_PhanQuyen
     {
         QL_PhanQuyenTableAdapter atp_phanquyen = new QL_PhanQuyenTableAdapter();
-        QuyenChucNangTableAdapter atp_quyenchucnang = new QuyenChucNangTableAdapter();
     }
 }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
+using DiemDanhSinhVien.ClassXuLy;
 
 namespace DiemDanhSinhVien.Views
 {
@@ -17,18 +18,24 @@ namespace DiemDanhSinhVien.Views
         BLL_NguoidungNhomnguoidung NDNNDbll = new BLL_NguoidungNhomnguoidung();
         BLL_NguoiDung nguoidungBll = new BLL_NguoiDung();
         BLL_themnguoidungvaonhom themBLL = new BLL_themnguoidungvaonhom();
+        BLL_QuyenChucNang quyenchucnangBll = new BLL_QuyenChucNang();
+        private int hoatdong = 0;
 
         private string tentaikhoan="";
 
         public frmPhanquyennguoidung()
         {
             InitializeComponent();
-            loadNhomnguoidung();
+            loadCbo_Nhomnguoidung();
             loadNguoidung();
+            loadNhomNguoidung();
         }
         #region hàm load
-
-        void loadNhomnguoidung()
+        void loadNhomNguoidung()
+        {
+            dgv_1.DataSource = nhomnguoidungbll.loadNhomnguoidung();
+        }
+        void loadCbo_Nhomnguoidung()
         {
             cbo_nhomnguoidung.DataSource = nhomnguoidungbll.loadNhomnguoidung();
             cbo_nhomnguoidung.DisplayMember = "TenNhom";
@@ -38,30 +45,134 @@ namespace DiemDanhSinhVien.Views
         {
             dgv_nguoidungnhomnguoidung.DataSource = themBLL.load(pMaNhom);
         }
+        List<DAONguoiDung> listNguoidung()
+        {
+            List<DAONguoiDung> listNguoidung = new List<DAONguoiDung>();
+            DataTable table = nguoidungBll.loadNguoidung();
+            foreach (DataRow item in table.Rows)
+            {
+                DAONguoiDung nguoidung= new DAONguoiDung();
+                if (item.ItemArray[2].ToString() == "0")
+                {
+                    nguoidung.TenDangNhap = item.ItemArray[0].ToString();
+                    nguoidung.MatKhau = item.ItemArray[1].ToString();
+                    nguoidung.Hoatdong = false;
+                }
+                else
+                {
+                    nguoidung.TenDangNhap = item.ItemArray[0].ToString();
+                    nguoidung.MatKhau = item.ItemArray[1].ToString();
+                    nguoidung.Hoatdong = true;
+                }
+                listNguoidung.Add(nguoidung); 
+            }
+            return listNguoidung;
+        }
         void loadNguoidung()
         {
-            dgv_Nguoidung.DataSource = nguoidungBll.loadNguoidung();
+            qL_NguoiDungDataGridView.DataSource = listNguoidung();
         }
-        
+        void loadQuyenChucNang()
+        {
+            dgv_chucnangquyen.DataSource = quyenchucnangBll.GetDataQuyenChucNang();
+        }
         #endregion
 
-        private void cbo_nhomnguoidung_SelectedIndexChanged(object sender, EventArgs e)
+
+        private void frmPhanquyennguoidung_Load(object sender, EventArgs e)
         {
-            string pMaNhom = cbo_nhomnguoidung.SelectedValue.ToString();
-            loadDsNguoidungNhomnguoidungByMaNhom(pMaNhom);
+            // TODO: This line of code loads data into the 'qldiemdanhsvDataSet.QL_NhomNguoiDung' table. You can move, or remove it, as needed.
+            this.qL_NhomNguoiDungTableAdapter.Fill(this.qldiemdanhsvDataSet.QL_NhomNguoiDung);
+            // TODO: This line of code loads data into the 'qldiemdanhsvDataSet.QL_NguoiDung' table. You can move, or remove it, as needed.
+            this.qL_NguoiDungTableAdapter.Fill(this.qldiemdanhsvDataSet.QL_NguoiDung);
+
         }
 
-        private void btnThemvao_Click(object sender, EventArgs e)
+        private void btnthemnguoidung_Click(object sender, EventArgs e)
         {
+            string TenDangnhap = txtTendangnhap.Text;
+            string matkhau = txtMatkhau.Text;
+            try
+            {
+                int them = nguoidungBll.themNguoidung(TenDangnhap, matkhau);
+                if (them != 0)
+                {
+                    MessageBox.Show("Thêm thành công");
+                    loadNguoidung();
+                }
+                else
+                {
+                    MessageBox.Show("Thất bại");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Tên người dùng đã tồn tại. Vui lòng kiểm tra lại");
+                txtTendangnhap.Text = "";
+                txtMatkhau.Text = "";
+                txtTendangnhap.Focus();
+                return;
+            }
+        }
 
-            if (tentaikhoan == "")
+        private void btnXoaNguoidung_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có chắc muốn xóa " + txtTendangnhap.Text + " ?", "Xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            {
+                if(result==DialogResult.Yes)
+                {   
+                    int xoa= nguoidungBll.xoaNguoidung(txtTendangnhap.Text.Trim());
+                    if (xoa > 0)
+                    {
+                        MessageBox.Show("Xóa thành công");
+                        loadNguoidung();
+                    }
+                    else if (xoa == 0)
+                        MessageBox.Show("Thất bại");
+                    else
+                        MessageBox.Show("Không được xóa");
+                }
+            }
+        }
+
+        private void qL_NguoiDungDataGridView_SelectionChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int r = qL_NguoiDungDataGridView.CurrentCell.RowIndex;
+                txtTendangnhap.Text = qL_NguoiDungDataGridView.Rows[r].Cells[0].Value.ToString();
+                txtMatkhau.Text = qL_NguoiDungDataGridView.Rows[r].Cells[1].Value.ToString();
+                hoatdong = int.Parse(qL_NguoiDungDataGridView.Rows[r].Cells[2].Value.ToString());
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void cbo_nhomnguoidung_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            try
+            {
+                string manhom = cbo_nhomnguoidung.SelectedValue.ToString();
+                loadDsNguoidungNhomnguoidungByMaNhom(manhom);
+            }
+            catch 
+            {
+
+            }
+        }
+
+        private void btnThemvao_Click_1(object sender, EventArgs e)
+        {
+            if (txtTendangnhap.Text.Trim() == "")
             {
                 MessageBox.Show("Vui lòng chọn người dùng");
             }
-            
+
             string pMaNhom = cbo_nhomnguoidung.SelectedValue.ToString();
-            string ghichu="";
-            int them = NDNNDbll.themNguoidungVao(tentaikhoan, pMaNhom, ghichu);
+            string ghichu = "";
+            int them = NDNNDbll.themNguoidungVao(txtTendangnhap.Text, pMaNhom, ghichu);
             if (them == 1)
             {
                 MessageBox.Show("Thêm thành công");
@@ -74,22 +185,15 @@ namespace DiemDanhSinhVien.Views
             }
         }
 
-        private void dgv_Nguoidung_SelectionChanged(object sender, EventArgs e)
+        private void btnLayra_Click_1(object sender, EventArgs e)
         {
-            int r = dgv_Nguoidung.CurrentCell.RowIndex;
-            tentaikhoan = dgv_Nguoidung.Rows[r].Cells[0].Value.ToString();
-            
-        }
-
-        private void btnLayra_Click(object sender, EventArgs e)
-        {
-            if (tentaikhoan == "")
+            if (txtTendangnhap.Text.Trim() == "")
             {
                 MessageBox.Show("Vui lòng chọn tài khoản muốn xóa khỏi nhóm");
                 return;
             }
             string manhom = cbo_nhomnguoidung.SelectedValue.ToString();
-            int xoa = NDNNDbll.xoaNguoidungTrongNhom(tentaikhoan, manhom);
+            int xoa = NDNNDbll.xoaNguoidungTrongNhom(txtTendangnhap.Text, manhom);
             if (xoa == 0)
             {
                 MessageBox.Show("That bại");
@@ -101,25 +205,71 @@ namespace DiemDanhSinhVien.Views
             }
         }
 
-        private void dgv_nguoidungnhomnguoidung_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btnLuuNguoidung_Click(object sender, EventArgs e)
         {
             
         }
 
-        private void dgv_nguoidungnhomnguoidung_SelectionChanged(object sender, EventArgs e)
+        private void qL_NguoiDungDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.ColumnIndex == 2)//set your checkbox column index instead of 2
+            {
+                if (Convert.ToBoolean(qL_NguoiDungDataGridView.Rows[e.RowIndex].Cells[2].EditedFormattedValue) == true)
+                {
+                    try
+                    {
+                        nguoidungBll.updateNguoidung(txtMatkhau.Text.Trim(), 1, txtTendangnhap.Text.Trim());
+                        loadNguoidung();
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Lỗi");
+                    }
 
-            int r = dgv_nguoidungnhomnguoidung.CurrentCell.RowIndex;
+                }
+                else
+                {
+                    try
+                    {
+                        nguoidungBll.updateNguoidung(txtMatkhau.Text.Trim(), 1, txtTendangnhap.Text.Trim());
+                        loadNguoidung();
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Lỗi");
+                    }
+                }
+            }
+        }
+        private string MaNhom = "";
+
+        private void dgv_1_SelectionChanged(object sender, EventArgs e)
+        {
             try
             {
-                tentaikhoan = dgv_nguoidungnhomnguoidung.Rows[r].Cells[0].Value.ToString();
-
+                int r = dgv_1.CurrentCell.RowIndex;
+                MaNhom = dgv_1.Rows[r].Cells[0].Value.ToString();
+                loadQuyenChucNang();
+                dgv_chucnangquyen.Visible = true;
             }
             catch
             {
 
             }
-            
         }
+
+        private void dgv_1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //if (e.ColumnIndex == 0)
+            //{
+            //    int r = dgv_1.CurrentCell.RowIndex;
+            //    MaNhom = dgv_1.Rows[r].Cells[0].Value.ToString();
+            //    loadQuyenChucNang();
+            //    dgv_chucnangquyen.Visible = true;
+            //}
+            //else
+            //    return;
+        }
+
     }
 }
