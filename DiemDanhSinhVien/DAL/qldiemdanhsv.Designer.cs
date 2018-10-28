@@ -16076,7 +16076,7 @@ SELECT TenDangNhap, MatKhau, HoatDong FROM QL_NguoiDung WHERE (TenDangNhap = @Te
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual qldiemdanhsv.QL_NguoiDungDataTable GetDataBy() {
+        public virtual qldiemdanhsv.QL_NguoiDungDataTable GetDataBy1() {
             this.Adapter.SelectCommand = this.CommandCollection[2];
             qldiemdanhsv.QL_NguoiDungDataTable dataTable = new qldiemdanhsv.QL_NguoiDungDataTable();
             this.Adapter.Fill(dataTable);
